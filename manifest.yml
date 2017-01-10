@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: dg-iot-app1
+  host: dg-iot-app1
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - dg-iot-app1-cloudantNoSQLDB
+  - dg-iot-app1-iotf-service
